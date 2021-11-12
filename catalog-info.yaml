@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "platops-product-infrastructure"
+  description: aaa
+  annotations:
+    # This must match folder-name/job-name in Jenkins.
+    jenkins.io/github-folder: 'HMCTS_platops/platops-product-infrastructure'
+    github.com/project-slug: ''
+  tags:
+    - terraform
+  links:
+    - url: https://hmcts-reform.slack.com/app_redirect?channel=
+      title:  on Slack
+      icon: chat
+spec:
+  type: service
+  lifecycle: experimental
+  owner: dts_platform_operations
